@@ -1,22 +1,116 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>hello</title>
+    <title>HOME</title>
+    <style>
+      .face:hover {
+        background-color: yellow;
+      }
+      .home:hover {
+        color: yellow;
+      }
+      #공지:hover {
+        background-color: yellow;
+      }
+      li:hover {
+        background: yellowgreen;
+      }
+    </style>
   </head>
   <body>
-    <a href="css.html">css</a><br />
-    <a href="index.html">hello</a>
-    <h1 title="tooltip">test tooltip</h1>
-    <br />
-    <p title="p test">내가 입력한 포멧 그대로 출력 x 입 니 다</p>
+    <a class="home" href="index.html"><b>HOME</b></a>
+    <a class="face" href="css.html"><img src="facial expression.png" /></a>
     <hr />
     <pre title="pre test">
-        내가 입력한
-        포멧 그대로
-             출력
-             합
-             니  
-               다
+      원하는
+      모습으로
+      보여짐
+    </pre>
+    <p id="공지">공지사항</p>
+    <br />
+    <ol type="1">
+      <li>하나</li>
+      <li>둘</li>
+    </ol>
+    <table border="1">
+      <caption>
+        숫자
+      </caption>
+      <thead>
+        <tr>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>11</th>
+          <th>13</th>
+          <th>15</th>
+        </tr>
+      </tfoot>
+    </table>
+    <table border="1">
+      <caption>
+        비정형표
+      </caption>
+      <tr>
+        <td rowspan="3">A</td>
+        <td colspan="2">B</td>
+      </tr>
+      <tr>
+        <td rowspan="2">C</td>
+        <td>D</td>
+      </tr>
+      <tr>
+        <td>E</td>
+      </tr>
+    </table>
+    <div>
+      <ul>
+        <li><a href="#love">111</a></li>
+        <li><a href="#ddd2">123</a></li>
+        <li>123</li>
+      </ul>
+    </div>
+
+    <h3 id="love">
+      ddddddddddddddddddddddddddddddddddd<br />
+      dddddddddd<br />ddddddddddd<br />ddddddd<br />ddddddd
+      ddddddddddddddddddd<br />dddddddddddddddd dddddddddddd<br />dddddddddddd<br />ddddddddddd
+      ddddddddddddddddddddd<br />dddddddddddddd
+      ddddddddddddddddddddddddddddddddddd ddddddddd<br />dddddddddddddddddddddddddd
+      dddddddddddd<br />ddddddddddddddddddddddd ddddddddddddddddddddd<br />dddddddddddddd
+      ddddddddddddddddddddddddddddddddddd dddddddddd<br />ddddddddddddddddddddddddd
+      ddddddddddddddddddddd<br />dddddddddddddd
+    </h3>
+    <pre id="ddd2">
+
+      d
+      ddddddddddddddddddddddddddddddddddd
+      ddddddddddddddddddddddddddddddddddd
+      ddddddddddddddddddddddddddddddddddd
+      ddddddddddddddddddddddddddddddddddd
+      ddddddddddddddddddddddddddddddddddd
+      ddddddddddddddddddddddddddddddddddd
+      ddddddddddddddddddddddddddddddddddd
+      ddddddddddddddddddddddddddddddddddd
+      ddddddddddddddddddddddddddddddddddd
+      ddddddddddddddddddddddddddddddddddd
+
     </pre>
   </body>
 </html>
