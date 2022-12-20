@@ -3,114 +3,71 @@
   <head>
     <title>HOME</title>
     <style>
-      .face:hover {
-        background-color: yellow;
+      html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
       }
-      .home:hover {
-        color: yellow;
+      body {
+        margin-right: 10%;
+        margin-left: 10%;
+        padding: 0;
+        height: 100%;
+        width: 80%;
       }
-      #공지:hover {
-        background-color: yellow;
+      #nb1 {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 50px;
+        background: gray;
       }
-      li:hover {
-        background: yellowgreen;
+      #front {
+        width: 100%;
+        height: 200px;
+        background: red;
+      }
+      #mid {
+        width: 100%;
+        height: 4084px;
+
+        padding: 5px;
+      }
+      #mid #nav {
+        display: inline-block;
+        width: 20%;
+        height: 4084px;
+        background: yellow;
+        padding: 5px;
+      }
+
+      #mid #section {
+        display: inline-block;
+        width: 30%;
+        height: 100%;
+
+        border-style: solid;
+        border-radius: 0px 20px;
+      }
+      #search {
+        margin: 5px;
+        height: 30px;
       }
     </style>
   </head>
   <body>
-    <a class="home" href="index.html"><b>HOME</b></a>
-    <a class="face" href="css.html"><img src="facial expression.png" /></a>
-    <hr />
-    <pre title="pre test">
-      원하는
-      모습으로
-      보여짐
-    </pre>
-    <p id="공지">공지사항</p>
-    <br />
-    <ol type="1">
-      <li>하나</li>
-      <li>둘</li>
-    </ol>
-    <table border="1">
-      <caption>
-        숫자
-      </caption>
-      <thead>
-        <tr>
-          <th>1</th>
-          <th>2</th>
-          <th>3</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>8</td>
-          <td>9</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <th>11</th>
-          <th>13</th>
-          <th>15</th>
-        </tr>
-      </tfoot>
-    </table>
-    <table border="1">
-      <caption>
-        비정형표
-      </caption>
-      <tr>
-        <td rowspan="3">A</td>
-        <td colspan="2">B</td>
-      </tr>
-      <tr>
-        <td rowspan="2">C</td>
-        <td>D</td>
-      </tr>
-      <tr>
-        <td>E</td>
-      </tr>
-    </table>
-    <div>
-      <ul>
-        <li><a href="#love">111</a></li>
-        <li><a href="#ddd2">123</a></li>
-        <li>123</li>
-      </ul>
+    <div id="nb1">
+      <a class="home" href="index.html"><b>HOME</b></a>
+      <a class="face" href="css.html"
+        ><img src="facial expression.png" / height="50"></a
+      >
     </div>
-
-    <h3 id="love">
-      ddddddddddddddddddddddddddddddddddd<br />
-      dddddddddd<br />ddddddddddd<br />ddddddd<br />ddddddd
-      ddddddddddddddddddd<br />dddddddddddddddd dddddddddddd<br />dddddddddddd<br />ddddddddddd
-      ddddddddddddddddddddd<br />dddddddddddddd
-      ddddddddddddddddddddddddddddddddddd ddddddddd<br />dddddddddddddddddddddddddd
-      dddddddddddd<br />ddddddddddddddddddddddd ddddddddddddddddddddd<br />dddddddddddddd
-      ddddddddddddddddddddddddddddddddddd dddddddddd<br />ddddddddddddddddddddddddd
-      ddddddddddddddddddddd<br />dddddddddddddd
-    </h3>
-    <pre id="ddd2">
-
-      d
-      ddddddddddddddddddddddddddddddddddd
-      ddddddddddddddddddddddddddddddddddd
-      ddddddddddddddddddddddddddddddddddd
-      ddddddddddddddddddddddddddddddddddd
-      ddddddddddddddddddddddddddddddddddd
-      ddddddddddddddddddddddddddddddddddd
-      ddddddddddddddddddddddddddddddddddd
-      ddddddddddddddddddddddddddddddddddd
-      ddddddddddddddddddddddddddddddddddd
-      ddddddddddddddddddddddddddddddddddd
-
-    </pre>
+    <div id="front">d</div>
+    <div id="search">search</div>
+    <div id="mid">
+      <div id="nav">nav</div>
+      <div id="section">se</div>
+    </div>
   </body>
 </html>
