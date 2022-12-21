@@ -59,11 +59,14 @@
       #main-area {
         display: inline-block;
         position: absolute;
-        border: 1px solid;
+
         width: 860px;
         height: 3000px;
       }
-
+      #body-list {
+        list-style: none;
+        padding: 0px;
+      }
       a {
         text-decoration: none;
       }
@@ -72,6 +75,30 @@
         height: 33px;
         padding: 5px;
       }
+      table,
+      tr {
+        border: 1px solid;
+        border-collapse: collapse;
+        border-right: 0px;
+        border-left: 0px;
+        border-color: gray;
+      }
+      table,th,tr{
+        border-top: 0px;
+      }
+      #main-table {
+        width: 860px;
+      }
+      #writing-title {
+        float: left;
+      }
+      #table-date{
+        float:right
+      }
+      #table-title > a > div,#table-date  > div{
+        padding: 8px 0px;
+      }
+     
     </style>
   </head>
   <body link="black" vlink="black" alink="navy">
@@ -112,6 +139,27 @@
       </div>
       <div id="main-area">
         <div id="category">전체글 보기</div>
+        <table id="main-table">
+          <thead>
+            <tr>
+              <th>
+                <div>
+                  <p id="writing-title">글 제목</p>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <tr id="tr1">
+              <td id="table-title"><a href="first.html"><div>첫글</div></td>
+              <td id="table-date"><div>22.12.21</div></td>
+            </tr>
+            <tr id="tr2">
+              <td id="table-title"><a href="first.html"><div>첫글</div></td>
+              <td id="table-date"><div>22.12.21</div></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </body>
