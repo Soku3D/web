@@ -10,64 +10,109 @@
         height: 100%;
       }
       body {
-        margin-right: 10%;
-        margin-left: 10%;
+        margin: auto;
         padding: 0;
         height: 100%;
-        width: 80%;
+        width: 1080px;
       }
       #nb1 {
         margin: 0;
         padding: 0;
         width: 100%;
         height: 50px;
-        background: gray;
+      }
+      #nb1 div {
+        margin: 10px;
+        margin-top: 15px;
+      }
+      #grapics {
+        display: inline-block;
+      }
+      #algorithm {
+        display: inline-block;
+      }
+      #home {
+        display: inline-block;
       }
       #front {
         width: 100%;
         height: 200px;
-        background: red;
-      }
-      #mid {
-        width: 100%;
-        height: 4084px;
-
-        padding: 5px;
-      }
-      #mid #nav {
-        display: inline-block;
-        width: 20%;
-        height: 4084px;
-        background: yellow;
-        padding: 5px;
       }
 
-      #mid #section {
-        display: inline-block;
-        width: 30%;
-        height: 100%;
-
-        border-style: solid;
-        border-radius: 0px 20px;
-      }
       #search {
         margin: 5px;
         height: 30px;
       }
+      #form_ {
+        float: right;
+      }
+      #content-area {
+        width: 1080px;
+      }
+      #group-area {
+        display: inline-block;
+        width: 200px;
+        height: 3000px;
+        border-top: 2px solid;
+        margin-right: 18px;
+      }
+      #main-area {
+        display: inline-block;
+        position: absolute;
+        border: 1px solid;
+        width: 860px;
+        height: 3000px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      #category {
+        display: inline-block;
+        height: 33px;
+        padding: 5px;
+      }
     </style>
   </head>
-  <body>
+  <body link="black" vlink="black" alink="navy">
     <div id="nb1">
-      <a class="home" href="index.html"><b>HOME</b></a>
-      <a class="face" href="css.html"
-        ><img src="facial expression.png" / height="50"></a
-      >
+      <div id="home">
+        <a class="home" href="index.html"><b>HOME</b></a>
+      </div>
+      <div id="grapics">
+        <a class="grapics" href="css.html">grapics</a>
+      </div>
+      <div id="algorithm">
+        <a class="algorithm" href="css.html">algorithm</a>
+      </div>
     </div>
-    <div id="front">d</div>
-    <div id="search">search</div>
-    <div id="mid">
-      <div id="nav">nav</div>
-      <div id="section">se</div>
+    <hr />
+    <div id="front"></div>
+    <div id="search">
+      <div id="form_">
+        <form name="search">
+          <input name="query" type-="text" />
+          <button type="button">검색</button>
+        </form>
+      </div>
+    </div>
+    <div id="content-area">
+      <div id="group-area">
+        <div id="border">
+          <div id="header"><h3>카테고리</h3></div>
+          <div id="border-body">
+            <div>
+              <ul id="body-list">
+                <li><a href="index.html">전체글 보기</a></li>
+                <li><a href="index.html">전체글 보기</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="main-area">
+        <div id="category">전체글 보기</div>
+      </div>
     </div>
   </body>
 </html>
