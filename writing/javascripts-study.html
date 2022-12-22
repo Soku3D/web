@@ -32,6 +32,12 @@
         display: inline-block;
       }
     </style>
+    <script>
+      function writeStr(str){
+        document.write(str);
+      }
+
+    </script>
   </head>
   <body link="black" vlink="black" alink="navy">
     <div id="top"></div>
@@ -104,6 +110,24 @@
         <div id="contents">
             <div id="contents-title">
                 <span>제목</span>
+            </div>
+            <div id="contents-body">
+              이번 글은 자바스크립트를 파일로 저장한 뒤 스크립트태그에 scr로 불러오는 방법을 사용하였다.<br><br>
+
+              <b>예제 6-4) 링크의 href에 자바스크립트 코드 작성하기</b><br><br>
+              <a href="javascript:alert('hi')">클릭해보시오.</a><br><br>
+
+              <b>사용자가 방문 시 입력한 값을 출력하는 코드</b><br><br>
+              <!--
+              <script>
+                var score = prompt("입력하시오");
+                document.writeStr(score);
+              </script>
+              -->
+              <Script>
+                writeStr("안녕");
+              </Script>
+              
             </div>
             
         </div>
