@@ -3,114 +3,28 @@
   <head>
     <title>HOME</title>
     <style>
-      html {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-      }
-      body {
-        margin: auto;
-        padding: 0;
-        height: 100%;
-        width: 1080px;
-      }
-      #nb1 {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 50px;
-      }
-      #nb1 div {
-        margin: 10px;
-        margin-top: 15px;
-      }
-      #grapics {
-        display: inline-block;
-      }
-      #algorithm {
-        display: inline-block;
-      }
-      #home {
-        display: inline-block;
-      }
-      #front {
-        width: 100%;
-        height: 200px;
-      }
-
-      #search {
-        margin: 5px;
-        height: 30px;
-      }
-      #form_ {
-        float: right;
-      }
-      #content-area {
-        width: 1080px;
-      }
-      #group-area {
-        display: inline-block;
-        width: 200px;
-        height: 3000px;
-        border-top: 2px solid;
-        margin-right: 18px;
-      }
-      #main-area {
-        display: inline-block;
-        position: absolute;
-
-        width: 860px;
-        height: 3000px;
-      }
-      #body-list {
-        list-style: none;
-        padding: 0px;
-      }
-      a {
-        text-decoration: none;
-      }
-      #category {
-        display: inline-block;
-        height: 33px;
-        padding: 5px;
-      }
-      table,
-      tr {
-        border: 1px solid;
-        border-collapse: collapse;
-        border-right: 0px;
-        border-left: 0px;
-        border-color: gray;
-      }
-      table,th,tr{
-        border-top: 0px;
-      }
-      #main-table {
-        width: 860px;
-      }
-      #writing-title {
-        float: left;
-      }
-      #table-date{
-        float:right
-      }
-      #table-title > a > div,#table-date  > div{
-        padding: 8px 0px;
-      }
-     
+      @import url(index.css);
     </style>
   </head>
   <body link="black" vlink="black" alink="navy">
+    <div id="top">
+    </div>
     <div id="nb1">
       <div id="home">
-        <a class="home" href="index.html"><b>HOME</b></a>
+        <a class="home" href="index.html">
+          <img src="img/onmouseout.png" alt="homeImg" height="40"
+            onmouseover="this.src='img/onmouseover.png'"
+            onmouseout="this.src='img/onmouseout.png'">
+        </a>
       </div>
       <div id="grapics">
-        <a class="grapics" href="css.html">grapics</a>
+        <a class="grapics" href="grapics.html"><span style="font-family:'Malgun Gothic'; font-size: 1.5em;"><b>grapics</b></span></a>
       </div>
       <div id="algorithm">
-        <a class="algorithm" href="css.html">algorithm</a>
+        <a class="algorithm" href="algorithms.html"><span style="font-family:'Malgun Gothic'; font-size: 1.5em;"><b>algorithm</b></span></a>
+      </div>
+      <div id="muchineLearning">
+        <a class="muchineLearning" href="muchineLearning.html"><span style="font-family:'Malgun Gothic'; font-size: 1.5em;"><b>muchine Learning</b></span></a>
       </div>
     </div>
     <hr />
@@ -142,22 +56,17 @@
         <table id="main-table">
           <thead>
             <tr>
-              <th>
-                <div>
-                  <p id="writing-title">글 제목</p>
-                </div>
+              <th colspan="2">
+                <div id="table-top">글제목</div>         
               </th>
             </tr>
           </thead>
           <tbody id="table-body">
             <tr id="tr1">
-              <td id="table-title"><a href="first.html"><div>첫글</div></td>
-              <td id="table-date"><div>22.12.21</div></td>
+              <td id="table-title"><a href="writing/javascripts-study.html"><div>자바스크립트 공부</div></td>
+              <td id="table-date"><div>22.12.22</div></td>
             </tr>
-            <tr id="tr2">
-              <td id="table-title"><a href="first.html"><div>첫글</div></td>
-              <td id="table-date"><div>22.12.21</div></td>
-            </tr>
+            
           </tbody>
         </table>
       </div>
