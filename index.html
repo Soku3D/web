@@ -4,27 +4,43 @@
     <title>HOME</title>
     <style>
       @import url(index.css);
+      @import url(order.css);
     </style>
   </head>
   <body link="black" vlink="black" alink="navy">
-    <div id="top">
-    </div>
+    <div id="top"></div>
     <div id="nb1">
       <div id="home">
         <a class="home" href="index.html">
-          <img src="img/onmouseout.png" alt="homeImg" height="40"
+          <img
+            src="img/onmouseout.png"
+            alt="homeImg"
+            height="40"
             onmouseover="this.src='img/onmouseover.png'"
-            onmouseout="this.src='img/onmouseout.png'">
+            onmouseout="this.src='img/onmouseout.png'"
+          />
         </a>
       </div>
       <div id="grapics">
-        <a class="grapics" href="grapics.html"><span style="font-family:'Malgun Gothic'; font-size: 1.5em;"><b>grapics</b></span></a>
+        <a class="grapics" href="grapics.html"
+          ><span style="font-family: 'Malgun Gothic'; font-size: 1.5em"
+            ><b>grapics</b></span
+          ></a
+        >
       </div>
       <div id="algorithm">
-        <a class="algorithm" href="algorithms.html"><span style="font-family:'Malgun Gothic'; font-size: 1.5em;"><b>algorithm</b></span></a>
+        <a class="algorithm" href="algorithms.html"
+          ><span style="font-family: 'Malgun Gothic'; font-size: 1.5em"
+            ><b>algorithm</b></span
+          ></a
+        >
       </div>
       <div id="muchineLearning">
-        <a class="muchineLearning" href="muchineLearning.html"><span style="font-family:'Malgun Gothic'; font-size: 1.5em;"><b>muchine Learning</b></span></a>
+        <a class="muchineLearning" href="muchineLearning.html"
+          ><span style="font-family: 'Malgun Gothic'; font-size: 1.5em"
+            ><b>muchine Learning</b></span
+          ></a
+        >
       </div>
     </div>
     <hr />
@@ -53,7 +69,9 @@
       </div>
       <div id="main-area">
         <div id="category">전체글 보기</div>
-        <table id="main-table">
+        <div id="header">
+          
+          <table id="main-table">
           <thead>
             <tr>
               <th colspan="2">
@@ -62,13 +80,20 @@
             </tr>
           </thead>
           <tbody id="table-body">
+            <tr id="tr2">
+              <td id="table-title"><a href="javascripts-study.html"><div>새글</div></td>
+              <td id="table-date"><div>22.12.22</div></td>
+            </tr>
             <tr id="tr1">
               <td id="table-title"><a href="writing/javascripts-study.html"><div>자바스크립트 공부</div></td>
               <td id="table-date"><div>22.12.22</div></td>
             </tr>
             
+            
           </tbody>
-        </table>
+          </table>
+        </div>
+        
       </div>
     </div>
   </body>
